@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>866822766738-2de4vr7aai3n0ar0vskcq52720kpj8ei.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.866822766738-2de4vr7aai3n0ar0vskcq52720kpj8ei</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAUJLIlP4fJl6h6m6ElK1ycxnSvqBWKMS8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>866822766738</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.alexBatyesheu.ProgressApp</string>
+	<key>PROJECT_ID</key>
+	<string>progressapp-81832</string>
+	<key>STORAGE_BUCKET</key>
+	<string>progressapp-81832.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:866822766738:ios:316a95d2d3522b3621e64b</string>
+	<key>DATABASE_URL</key>
+	<string>https://progressapp-81832-default-rtdb.europe-west1.firebasedatabase.app</string>
+</dict>
+</plist>

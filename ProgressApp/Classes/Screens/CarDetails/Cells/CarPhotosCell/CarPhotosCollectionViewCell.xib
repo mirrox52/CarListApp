@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CarPhotosCollectionViewCell" id="gTV-IL-0wX" customClass="CarPhotosCollectionViewCell" customModule="ProgressApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="277" height="205"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="277" height="205"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="IF3-vZ-Z9C">
+                        <rect key="frame" x="10" y="10" width="257" height="185"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Hc3-tx-45v">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="79J-ZE-MiD">
+                        <rect key="frame" x="80" y="169" width="117" height="26"/>
+                    </pageControl>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="79J-ZE-MiD" secondAttribute="trailing" constant="80" id="K9S-rL-Bdg"/>
+                <constraint firstItem="IF3-vZ-Z9C" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="TxO-ja-UPo"/>
+                <constraint firstAttribute="bottom" secondItem="79J-ZE-MiD" secondAttribute="bottom" constant="10" id="dZp-Ik-ldb"/>
+                <constraint firstAttribute="trailing" secondItem="IF3-vZ-Z9C" secondAttribute="trailing" constant="10" id="fgh-6C-8mE"/>
+                <constraint firstItem="IF3-vZ-Z9C" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="ht0-mK-4vf"/>
+                <constraint firstItem="79J-ZE-MiD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="80" id="odc-sd-Yye"/>
+                <constraint firstAttribute="bottom" secondItem="IF3-vZ-Z9C" secondAttribute="bottom" constant="10" id="xtB-Ts-ZQk"/>
+            </constraints>
+            <size key="customSize" width="277" height="205"/>
+            <connections>
+                <outlet property="collectionView" destination="IF3-vZ-Z9C" id="b7P-P0-JBY"/>
+                <outlet property="pageControl" destination="79J-ZE-MiD" id="gTf-rW-Xby"/>
+            </connections>
+            <point key="canvasLocation" x="311.53846153846155" y="75.710900473933648"/>
+        </collectionViewCell>
+    </objects>
+</document>

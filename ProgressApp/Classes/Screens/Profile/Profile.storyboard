@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="ProfileViewController" customModule="ProgressApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3c4-XU-3qP" customClass="TopBarView" customModule="ProgressApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="62"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" placeholder="YES" id="jj0-ZG-whL"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="62" id="xhJ-zG-cic"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OSL-lu-fX7">
+                                <rect key="frame" x="10" y="326.5" width="394" height="243.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GmC-bl-wqV">
+                                <rect key="frame" x="20" y="336.5" width="374" height="223.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="g95-9g-YNg">
+                                        <rect key="frame" x="62" y="0.0" width="250" height="81"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to select preffered DataBase" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jy-TY-Egi">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sd6-hT-Za0">
+                                                <rect key="frame" x="0.0" y="25.5" width="250" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="sNs-WU-EI8"/>
+                                                </constraints>
+                                                <menu key="menu" id="LRs-gQ-Rkg">
+                                                    <children>
+                                                        <command title="CoreData" id="6hP-2f-jJ1"/>
+                                                        <command title="Realm" id="kta-Z3-4T8"/>
+                                                    </children>
+                                                </menu>
+                                                <state key="normal" title="DataBase"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbc-9d-n89">
+                                                <rect key="frame" x="0.0" y="60.5" width="250" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uui-eZ-EO8">
+                                        <rect key="frame" x="62" y="101" width="250" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="GpW-Ph-4Qa"/>
+                                            <constraint firstAttribute="width" constant="250" id="t0a-af-UM7"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7V8-3n-KYY">
+                                        <rect key="frame" x="62" y="122" width="250" height="101.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to select preffered Asynchronous processes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aR-pX-hob">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjt-mw-Gdj">
+                                                <rect key="frame" x="0.0" y="46" width="250" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="XWY-Yy-DU8"/>
+                                                </constraints>
+                                                <menu key="menu" id="tvy-EJ-aEC">
+                                                    <children>
+                                                        <command title="GCD" id="Udg-fF-RtS"/>
+                                                        <command title="OperationQueue" id="gMB-hN-TAx"/>
+                                                    </children>
+                                                </menu>
+                                                <state key="normal" title="AsyncOperations"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaS-vW-AuR">
+                                                <rect key="frame" x="0.0" y="81" width="250" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GmC-bl-wqV" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Ak0-bC-hrI"/>
+                            <constraint firstItem="3c4-XU-3qP" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Nu2-gz-UOS"/>
+                            <constraint firstItem="OSL-lu-fX7" firstAttribute="leading" secondItem="GmC-bl-wqV" secondAttribute="leading" constant="-10" id="T4q-E9-6Vl"/>
+                            <constraint firstItem="GmC-bl-wqV" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="Y6C-Wc-rBc"/>
+                            <constraint firstItem="3c4-XU-3qP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Y7G-BN-wig"/>
+                            <constraint firstItem="GmC-bl-wqV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="ZNO-UC-wNG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="3c4-XU-3qP" secondAttribute="trailing" id="eGR-XG-8P0"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="GmC-bl-wqV" secondAttribute="trailing" constant="20" id="gqn-PO-GWa"/>
+                            <constraint firstItem="OSL-lu-fX7" firstAttribute="bottom" secondItem="GmC-bl-wqV" secondAttribute="bottom" constant="10" id="mHa-bb-2T1"/>
+                            <constraint firstItem="OSL-lu-fX7" firstAttribute="top" secondItem="GmC-bl-wqV" secondAttribute="top" constant="-10" id="tkv-s1-yc1"/>
+                            <constraint firstItem="OSL-lu-fX7" firstAttribute="trailing" secondItem="GmC-bl-wqV" secondAttribute="trailing" constant="10" id="wKW-fv-GpU"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="person.fill" catalog="system" id="nfP-Bw-ctl"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="asyncOperationsButton" destination="cjt-mw-Gdj" id="1yJ-3g-fG6"/>
+                        <outlet property="asyncOperationsMenu" destination="tvy-EJ-aEC" id="T2A-xF-Edp"/>
+                        <outlet property="backgroundView" destination="OSL-lu-fX7" id="SuJ-K5-Xbl"/>
+                        <outlet property="dataBaseButton" destination="sd6-hT-Za0" id="80d-9n-z3D"/>
+                        <outlet property="dataBaseMenu" destination="LRs-gQ-Rkg" id="xBe-N9-Gnw"/>
+                        <outlet property="selectedAsyncOperationLabel" destination="UaS-vW-AuR" id="goy-Hc-LtZ"/>
+                        <outlet property="selectedDatabaseLabel" destination="fbc-9d-n89" id="ce0-DD-a25"/>
+                        <outlet property="topBarView" destination="3c4-XU-3qP" id="iPP-Zz-0U1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

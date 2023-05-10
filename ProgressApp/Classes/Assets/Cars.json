@@ -1,0 +1,74 @@
+
+    [
+      {
+        "id": 1,
+        "manufacturer": "Porsche",
+        "model": "911",
+        "carDescription": "The Porsche 911 (pronounced Nine Eleven or in German: Neunelfer) is a two-door 2+2 high performance rear-engined sports car introduced in September 1964 by Porsche AG of Stuttgart, Germany. It has a rear-mounted flat-six engine and originally a torsion bar suspension. The car has been continuously enhanced through the years but the basic concept has remained unchanged. The engines were air-cooled until the introduction of the 996 series in 1998.",
+        "weight": 1120,
+        "maxSpeed": 332,
+        "fuelConsuption": "11,3 - 10,8 l/100 km",
+        "imagesUrl": [
+          "https://files.porsche.com/filestore/image/multimedia/none/911-tu-modelimage-sideshot/model/fe21bac9-833c-11eb-80d3-005056bbdc38/porsche-model.png",
+          "https://files.porsche.com/filestore/image/multimedia/none/911-tus-modelimage-sideshot/model/930894f1-6214-11ea-80c8-005056bbdc38/porsche-model.png",
+          "https://files.porsche.com/filestore/image/multimedia/none/992-c2s-modelimage-sideshot/model/fb392e88-9df3-11ec-80eb-005056bbdc38/porsche-model.png"
+        ]
+      },
+      {
+        "id": 2,
+        "manufacturer": "Mercedes",
+        "model": "S-class(C217)",
+        "carDescription": "The Mercedes-Benz S-Class Coupé and Convertible (C217/A217) are grand tourers manufactured by Mercedes-Benz from 2014 to 2020. The C217 model succeeded the C216 CL-Class and is the last version of the S-Class coupé. It is also the first Mercedes coupé to carry the S-Class name since the C126 model.",
+        "weight": 2090,
+        "maxSpeed": 309,
+        "fuelConsuption": "12,3 l/100 km",
+        "imagesUrl": [
+          "https://s.auto.drom.ru/img4/catalog/photos/fullsize/mercedes-benz/s-class/mercedes-benz_s-class_111972.jpg",
+          "https://s.auto.drom.ru/i24216/c/photos/fullsize/mercedes-benz/s-class/mercedes-benz_s-class_776786.jpg",
+          "https://autoreview.ru/images/Article/1619/Article_161990_860_575.jpg"
+        ]
+      },
+      {
+        "id": 3,
+        "manufacturer": "BMW",
+        "model": "7 Series",
+        "carDescription": "The BMW 7 Series is a full-size luxury sedan manufactured and marketed by the German automaker BMW since 1977. It is the successor to the BMW E3 New Six sedan and is currently in its sixth generation.",
+        "weight": 1950,
+        "maxSpeed": 250,
+        "fuelConsuption": "11,8 - 15 l/100 km",
+        "imagesUrl": [
+          "https://avatars.mds.yandex.net/get-verba/937147/2a000001685adccc370870f1d0556a2095b2/cattouch",
+          "https://mosautoshina.ru/i/auto/bmw_7-series_2022-600.jpg",
+          "https://img-c.drive.ru/models.photos/0000/000/000/001/82a/48d7dd3b5ab526ae-large.jpg"
+        ]
+      },
+      {
+        "id": 4,
+        "manufacturer": "Audi",
+        "model": "A5",
+        "carDescription": "The Audi A5 is a series of compact executive coupe cars produced by the German automobile manufacturer Audi since June 2007. The A5 range additionally comprises the coupe, cabriolet, and Sportback (a five-door liftback with a fastback roofline) version of the Audi A4 saloon and estate models.",
+        "weight": 1695,
+        "maxSpeed": 250,
+        "fuelConsuption": "12,3 - 18 l/100 km",
+        "imagesUrl": [
+          "https://s.auto.drom.ru/i24247/c/photos/fullsize/audi/a5/audi_a5_960594.jpg",
+          "https://img-c.drive.ru/models.photos/0000/000/000/001/9db/48d8a7778fad8d4d-large.jpg",
+          "https://www.audi.by/content/dam/nemo/models/a5/a5-sportback/my-2021/1920x1080-inline-media-gallery/1920x1080-audi-a5-sportback-AA5_SB_191007_1.jpg"
+        ]
+      },
+      {
+        "id": 5,
+        "manufacturer": "Buggati",
+        "model": "Chiron",
+        "carDescription": "The Bugatti Chiron is a mid-engine two-seater sports car designed and developed in Germany by Bugatti Engineering GmbH and manufactured in Molsheim, France, by French automobile manufacturer Bugatti Automobiles S.A.S. The successor to the Bugatti Veyron, the Chiron was first shown at the Geneva Motor Show on 1 March 2016. The car is based on the Bugatti Vision Gran Turismo concept car.",
+        "weight": 1996,
+        "maxSpeed": 490,
+        "fuelConsuption": "43,3 l/100 km",
+        "imagesUrl": [
+          "https://s0.rbk.ru/v6_top_pics/media/img/4/58/756421770175584.jpg",
+          "https://cdn.motor1.com/images/mgl/BPkgv/s1/bugatti-chiron-sport.jpg",
+          "https://auto.24tv.ua/resources/photos/news/1200x900_DIR/202207/39804bb6a08db-6eff-456a-bd34-f882459c6bfe.jpg?1658492094000",
+          "https://s0.rbk.ru/v6_top_pics/media/img/8/64/755680197831648.jpg"
+        ]
+      }
+    ]

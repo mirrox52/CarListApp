@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Car List View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CarListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="CarListViewController" customModule="ProgressApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XYG-A9-TsX" customClass="TopBarView" customModule="ProgressApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="62"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="62" id="HfI-am-bOy"/>
+                                    <constraint firstAttribute="height" constant="62" placeholder="YES" id="vVR-Dt-2ff"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WfM-gW-HUD">
+                                <rect key="frame" x="0.0" y="62" width="414" height="751"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0W-Ki-y0O">
+                                <rect key="frame" x="334" y="733" width="60" height="60"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="QRB-z7-xI9"/>
+                                    <constraint firstAttribute="height" constant="60" id="VSO-Ac-DWN"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="13"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addCarTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="jgk-mb-yJ9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="WfM-gW-HUD" secondAttribute="bottom" id="BVz-rU-y3v"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="XYG-A9-TsX" secondAttribute="trailing" id="CYS-Aa-Bli"/>
+                            <constraint firstItem="WfM-gW-HUD" firstAttribute="top" secondItem="XYG-A9-TsX" secondAttribute="bottom" id="DTB-oI-079"/>
+                            <constraint firstItem="WfM-gW-HUD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="TqC-ek-RIk"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="WfM-gW-HUD" secondAttribute="trailing" id="UuU-y7-xWs"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="m0W-Ki-y0O" secondAttribute="trailing" constant="20" id="mcC-ds-fYk"/>
+                            <constraint firstItem="XYG-A9-TsX" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="p5z-9Z-dRY"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="m0W-Ki-y0O" secondAttribute="bottom" constant="20" id="tra-MD-vBq"/>
+                            <constraint firstItem="XYG-A9-TsX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="yoa-2O-1BU"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="car.fill" catalog="system" selectedImage="car.fill" id="BGb-GA-q3W"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="addButton" destination="m0W-Ki-y0O" id="n25-Ro-VAS"/>
+                        <outlet property="tableView" destination="WfM-gW-HUD" id="m8P-gO-tdQ"/>
+                        <outlet property="topBarView" destination="XYG-A9-TsX" id="6Fb-fk-R2u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="car.fill" catalog="system" width="128" height="95"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

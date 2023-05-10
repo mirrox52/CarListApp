@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  ProgressApp
+
+  Created by Aliaksandr on 5.09.22.
+  
+*/
+
+// MARK: CarList
+"CarList.Badge.value" = "Cars";
+
+// MARK: Profile
+"Profile.Badge.value" = "Profile";
+
+// MARK: CarDetails
+"CarDetails.SectionHeader.characteristics" = "Characteristics";
+"CarDetails.Characteristics.manufacturer" = "Manufacturer";
+"CarDetails.Characteristics.model" = "Model";
+"CarDetails.Characteristics.carDescription" = "Description";
+"CarDetails.Characteristics.weight" = "Weight";
+"CarDetails.Characteristics.maxSpeed" = "Maximum Speed";
+"CarDetails.Characteristics.fuelConsuption" = "Fuel Consuption";
+"CarDetails.Characteristics.images" = "Images";
+
+// MARK: AddCar
+"AddCar.addCarButton.text" = "Add Car";

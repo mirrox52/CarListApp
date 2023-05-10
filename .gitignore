@@ -1,0 +1,14 @@
+R.generated.swift
+Pods
+/Templates
+UserInterfaceState.xcuserstate
+.DS_Store
+Breakpoints_v2.xcbkptlist
+*.generated.swift
+Podfile.lock
+xcschememanagement\.plist
+*.xcuserstate
+
+### Xcode Patch ###
+*.xcworkspace
+ProgressApp.xcscheme
