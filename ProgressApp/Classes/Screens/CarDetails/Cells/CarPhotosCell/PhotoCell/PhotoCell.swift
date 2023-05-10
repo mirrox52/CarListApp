@@ -53,10 +53,12 @@ final class PhotoCell: UICollectionViewCell {
         let downloadImage = BlockOperation { [weak self] in
             guard let self else { return }
             if let image = UIImage(data: data) {
-                self.activityIndicator.stopAnimating()
-                self.activityIndicator.isHidden = true
-                self.imageView.isHidden = false
-                self.imageView.image = image
+                OperationQueue.main.addOperation {
+                    self.activityIndicator.stopAnimating()
+                    self.activityIndicator.isHidden = true
+                    self.imageView.isHidden = false
+                    self.imageView.image = image
+                }
             }
         }
         let queue = OperationQueue()

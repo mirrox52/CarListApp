@@ -66,10 +66,12 @@ private extension CarItemCell {
         let downloadImage = BlockOperation { [weak self] in
             guard let self else { return }
             if let image = UIImage(data: data) {
-                self.activityIndicator.stopAnimating()
-                self.activityIndicator.isHidden = true
-                self.carImageView.isHidden = false
-                self.carImageView.image = image
+                OperationQueue.main.addOperation {
+                    self.activityIndicator.stopAnimating()
+                    self.activityIndicator.isHidden = true
+                    self.carImageView.isHidden = false
+                    self.carImageView.image = image
+                }
             }
         }
         let queue = OperationQueue()

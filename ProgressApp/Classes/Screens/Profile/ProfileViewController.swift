@@ -58,10 +58,10 @@ private extension ProfileViewController {
             }
         )
         let fireBaseItem = UIAction.init(
-            title: DataBase.realm.name,
+            title: DataBase.firebase.name,
             handler: { [weak self] _ in
                 DataBaseManager.shared.setSelectedDataBase(selectedDataBase: .firebase)
-                self?.selectedDatabaseLabel.text = DataBase.realm.name
+                self?.selectedDatabaseLabel.text = DataBase.firebase.name
             }
         )
         let items = [coreDataItem, realmItem, fireBaseItem]
